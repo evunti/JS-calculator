@@ -1,36 +1,19 @@
-const firstNum = num;
-const secondNum = num;
+calcButtons = document.getElementById("calculator-keys");
 
-// define action-key
-if (
-  action === "add" ||
-  action === "subtract" ||
-  action === "divide" ||
-  action === "multiply"
-) {
-  console.log("action-key");
+// num = document.getElementsByClassName("num-key");
+// action = document.getElementsByClassName("action-key");
+// modify = document.getElementsByClassName("modify-key");
+
+// calcButtons.addEventListener("click", printNum, false);
+
+const diplay = document.getElementById("display");
+let currentInput = "";
+
+function updateDisplay(num) {
+  currentInput += num;
+  display.value = currentInput;
 }
-
-// define num-key
-if (
-  num === 0 ||
-  num === 1 ||
-  num === 2 ||
-  num === 3 ||
-  num === 4 ||
-  num === 5 ||
-  num === 6 ||
-  num === 7 ||
-  num === 8 ||
-  num === 9
-) {
-  console.log("num-key");
+function clearDisplay() {
+  currentInput = "";
+  display.value = "";
 }
-// define modify-key
-if (modify === "." || modify === "C") {
-  console.log("modify-key");
-}
-
-// document.getElementById('calculator-keys').addEventListener("click", type){
-
-// }
