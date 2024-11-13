@@ -27,5 +27,3 @@ function updateDisplayWithSum() {
   currentInput = eval(currentInput).toString();
   display.value = currentInput;
 }
-
-/
