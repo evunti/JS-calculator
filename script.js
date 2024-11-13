@@ -23,6 +23,9 @@ function updateDisplayWithAction(action) {
   display.value = currentInput;
 }
 
-function updateDisplayWithSum() {}
+function updateDisplayWithSum() {
+  currentInput = eval(currentInput).toString();
+  display.value = currentInput;
+}
 
-
+/

@@ -40,7 +40,7 @@
       <button
         class="action-key"
         id="multiple"
-        onclick="updateDisplayWithAction('x')"
+        onclick="updateDisplayWithAction('*')"
       >
         x
       </button>
@@ -53,7 +53,9 @@
       </button>
 
       <button class="modify-key" id="clear" onclick="clearDisplay()">C</button>
-      <button class="modify-key" id="decimal">.</button>
+      <button class="modify-key" id="decimal" onclick="updateDisplay('.')">
+        .
+      </button>
       <button class="modify-key" id="equals" onclick="updateDisplayWithSum()">
         =
       </button>
