@@ -10,16 +10,17 @@
   </head>
   <body>
     <div id="calculator-keys">
-      <button class="num-key">0</button>
-      <button class="num-key">1</button>
-      <button class="num-key">2</button>
-      <button class="num-key">3</button>
-      <button class="num-key">4</button>
-      <button class="num-key">5</button>
-      <button class="num-key">6</button>
-      <button class="num-key">7</button>
-      <button class="num-key">8</button>
-      <button class="num-key">9</button>
+      <input type="text" id="display" readonly />
+      <button class="num-key" id="nine" onclick="updateDisplay('9')">9</button>
+      <button class="num-key" id="eight" onclick="updateDisplay('8')">8</button>
+      <button class="num-key" id="seven" onclick="updateDisplay('7')">7</button>
+      <button class="num-key" id="six" onclick="updateDisplay('6')">6</button>
+      <button class="num-key" id="five" onclick="updateDisplay('5')">5</button>
+      <button class="num-key" id="four" onclick="updateDisplay('4')">4</button>
+      <button class="num-key" id="three" onclick="updateDisplay('3')">3</button>
+      <button class="num-key" id="two" onclick="updateDisplay('2')">2</button>
+      <button class="num-key" id="one" onclick="updateDisplay('1')">1</button>
+      <button class="num-key" id="zero" onclick="updateDisplay('0')">0</button>
 
       <button
         class="action-key"
