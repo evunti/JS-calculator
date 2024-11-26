@@ -1,6 +1,5 @@
 #calculator-keys {
   display: grid;
-  margin: 15% 35%;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 10px;
 }
@@ -17,24 +16,45 @@
   width: 100%;
 }
 
+body {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+.hero-container {
+  display: inline-block;
+  background-color: rgb(19, 29, 144);
+  border-radius: 15px;
+  padding: 20px;
+  width: 350px;
+  height: 450px;
+  margin: auto;
+  box-shadow: 0 20px 20px rgb(8, 13, 66);
+}
 button {
   display: grid;
   justify-content: center;
   padding: 10px;
   border: 1px solid #ccc;
+  border-radius: 5%;
   margin: 10px 0;
   background-color: #f9f9f9;
   text-align: center;
-  width: 100%;
-  height: 100%;
+  background-color: beige;
+  box-shadow: 0 5px 0 rgb(8, 13, 66);
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
 }
 
-button:hover {
-  background-color: #f1f1f1;
+button:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
+
 #clear {
   grid-column: 4;
   grid-row: 1;
+  background-color: rgb(194, 9, 9);
+  border-color: rgb(194, 9, 9);
 }
 #divide {
   grid-column: 4;
@@ -51,6 +71,10 @@ button:hover {
 #decimal {
   grid-column: 1;
   grid-row: 5;
+}
+#equals {
+  background-color: rgb(194, 9, 9);
+  border-color: rgb(194, 9, 9);
 }
 .num-key,
 .action-key,
